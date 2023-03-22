@@ -1,0 +1,172 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.title{
+    text-align: center;
+
+}
+p{
+    padding: 1rem;
+    margin: 0;
+    font-size: 1em;
+}
+.main-content-1{
+    background-color: black;
+    color: red;
+
+}
+.main-content-2{
+    background-color: darkolivegreen;
+    color: khaki;
+
+}
+.main-content-3{
+    background-color: gold;
+    color: rgb(255, 145, 0);
+}
+.main-content-4{
+    background-color: tomato;
+    color: white;
+}
+.aside{
+    background-color: lightpink;
+    font-size: 1.5em;
+    padding: 1rem;
+}
+footer{
+    font-size: .8em;
+}
+
+img{
+    height: 350px;
+    width: auto;
+    margin: 0;
+}
+.nav ul li a{
+    color: black;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: .3rem .7rem;
+    border-radius: .2rem;
+    margin: 0 2rem;
+}
+nav{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+a:hover{
+    background-color: red;
+}
+
+/*
+@supports (grid-area: auto;){
+    
+@media screen and (min-width: 450px){
+    .site{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "title title"
+            "main-content-1 mustang"
+            "evo main-content-2"
+            "main-content-3 porsche"
+            "Mini-truck main-content-4"
+            "aside footer";
+        }
+        .title{
+            grid-area: title;
+        }
+        .aside{
+            grid-area: aside;
+        }
+        .main-content-1{
+            grid-area: main-content-1;
+        }
+        .main-content-2{
+            grid-area: main-content-2;
+        }
+        .main-content-3{
+            grid-area: main-content-3;
+        }
+        .main-content-4{
+            grid-area: main-content-4;
+        }
+        .mustang{
+            grid-area: mustang;
+        }
+        .evo{
+            grid-area: evo;
+        }
+        .porsche{
+            grid-area: porsche;
+        }
+        .Mini-truck{
+            grid-area: Mini-truck;
+        }
+    }
+*/
+@media screen and (min-width:600px){
+    .site{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 3fr;
+        grid-template-areas: 
+            "title title title"
+            "nav nav nav"
+            "aside main-content-1 mustang"
+            "aside evo main-content-2"
+            "aside main-content-3 porsche"
+            "aside Mini-truck main-content-4"
+            "footer footer footer";
+        
+    }
+
+    .title{
+        grid-area: title;
+    }
+    .aside{
+        grid-area: aside;
+    }
+    .main-content-1{
+        grid-area: main-content-1;
+    }
+    .main-content-2{
+        grid-area: main-content-2;
+    }
+    .main-content-3{
+        grid-area: main-content-3;
+    }
+    .main-content-4{
+        grid-area: main-content-4;
+    }
+    .mustang{
+        grid-area: mustang;
+    }
+    .evo{
+        grid-area: evo;
+    }
+    .porsche{
+        grid-area: porsche;
+    }
+    .Mini-truck{
+        grid-area: Mini-truck;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    .nav{
+        grid-area: nav;
+    }
+
+}
+
